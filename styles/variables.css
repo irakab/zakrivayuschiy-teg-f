@@ -13,5 +13,9 @@
     --block-width: clamp(23.438rem, 8.929rem + 38.69vw, 43.75rem);
     --header-block-padding: clamp(7.625rem, 7.268rem + 0.952vw, 8.125rem);
     --black-border: 2px solid #000;
+    --accent-color: #000;
+    --buttom-text-color: #fff;
+    --heart-contour-color: #000;
+    --animation-fill-color: red;
     }
 
