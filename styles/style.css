@@ -71,7 +71,7 @@
 
 .card-title {
   font-family: var(--font-basic);
-  font-weight: var(--font-basic-title-weight);
+  font-variation-settings: 'wght' var(--font-basic-title-weight);
   font-size: 18px;
   line-height: 100%;
   padding-inline: 10px;
