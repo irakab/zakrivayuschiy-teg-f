@@ -30,6 +30,7 @@
   padding-block-start: var(--header-block-padding);
   padding-block-end: var(--header-block-padding);
   margin-block: 98px;
+  margin-inline: auto;
   border: var(--main-border);
 }
 
@@ -48,11 +49,12 @@
   gap: 20px;
 }
 
-.logo-top {
+.header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
 }
 
-.logo-bottom {
+.header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
@@ -71,7 +73,7 @@
 
 .card-title {
   font-family: var(--font-basic);
-  font-variation-settings: 'wght' var(--font-basic-title-weight);
+  font-variation-settings: "wght" var(--font-basic-title-weight);
   font-size: 18px;
   line-height: 100%;
   padding-inline: 10px;
@@ -139,6 +141,7 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  z-index: 2;
 }
 
 @supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
@@ -239,7 +242,6 @@
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
-  backdrop-filter: blur(7px);
 }
 
 #dialog-id {
@@ -300,6 +302,10 @@ dialog::backdrop {
     width: 28px;
     height: 28px;
     flex-shrink: 0;
+  }
+
+  .card-title {
+    line-height: 120%;
   }
 }
 
